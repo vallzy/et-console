@@ -47,5 +47,12 @@ namespace ETConsolePinvoke
             float x = (float)trkWait.Value / 10;
             lblWait.Text = x.ToString() + " ms";
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ColorDialog cdia = new ColorDialog();
+            cdia.ShowDialog();
+            pictureBox1.BackColor = cdia.Color;
+        }
     }
 }
